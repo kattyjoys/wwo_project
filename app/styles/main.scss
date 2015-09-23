@@ -1,14 +1,249 @@
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
+@import "_variables";
+@import "fonts";
+@import "base";
 
-
+//if lt IE 10
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
   padding: 0.2em 0;
 }
-h1{
-  color:#ffff00;
+
+
+/* Extra small devices (phones, less than 768px) */
+
+/*HEADER*/
+.banner-place{
+  display: none;
+}
+.navbar-brand{
+  display: inline-block;
+  width: 132px;
+  height: 53px;
+  background: url($image_dir + "main_logo.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.navbar-header{
+  padding: 16px 4px 9px 16px;
+}
+.navbar-toggle .icon-bar{
+  height: 3px;
+  width: 24px;
+  border-radius: 0;
+  background: $color-light-gray1;
+}
+.navbar-collapse{
+  background: $color-light-gray3;
+  font-family: $font-gothampromed;
+  letter-spacing: 1px;
+  font-size: $font-size-small;
+  .navbar-nav{
+    padding-left: 45px;
+    &> li a{
+      color: $color-copy-gray1;
+      padding-top: 17px;
+      padding-bottom: 18px;
+    }
+  }
+  .navbar-right{
+    display: none;
+  }
+}
+.navbar-inner{
+  font-family: $font-gothamprobold;
+  position: absolute;
+  top: 30px;
+  left: 159px;
+  .nav > li{
+    display: inline-block;
+    &.active{
+      a{
+        border: $color-light-green 2px solid;
+        color: $color-black;
+      }
+    }
+    a{
+      padding: 0 9px 1px 8px;
+      color: $color-light-gray2;
+      &:hover{
+        background: transparent;
+        color: $color-black;
+      }
+    }
+  }
+  .nav .dropdown{
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+  /*HEADER*/
+  .navbar-header{
+    float: none;
+  }
+  .navbar-toggle{
+    display: block;
+  }
+  .navbar-collapse{
+    .fav-location{
+      display: none;
+    }
+    &.collapse{
+      display: none!important;
+    }
+    &.collapse.in{
+      display: block!important;
+    }
+  }
+  .navbar-inner .nav .dropdown{
+    display: inline-block;
+    font-family: $font-gothamproreg;
+    letter-spacing: 1px;
+    font-size: $font-size-small;
+    .fa-star-o{
+      font-size: $font-size-large;
+    }
+    a{
+      color: $color-light-gray4 ;
+      .fav-body{
+        margin-right: 8px;
+        margin-left: 3px;
+        &:hover{
+          border-bottom: 2px solid $color-light-gray4;
+        }
+      }
+      &:hover{
+        color: $color-light-gray4;
+      }
+    }
+    .caret{
+      position: relative;
+      &:before{
+        position: absolute;
+        content: "";
+        display: block;
+        width: 14px;
+        height: 20px;
+        border: 1px solid $color-light-gray4;
+        top: -13px;
+        left: -7px;
+      }
+    }
+    .dropdown-menu{
+      li > a{
+        color: $color-copy-gray1;
+      }
+    }
+  }
+
+
+}
+
+
+/* Large devices (large desktops, 1800px and up) */
+@media (min-width: $screen-lg-min) {
+  .banner-place{
+    display: block;
+    padding: 22px 0;
+    text-align: center;
+    .banner-body{
+      display: inline-block;
+    }
+  }
+
+  /*HEADER*/
+  .navbar-header{
+    float: left;
+    padding: 0;
+  }
+  .navbar-brand{
+    width: 232px;
+    height: 93px;
+  }
+  .navbar-toggle{
+    display: none;
+  }
+  .navbar-collapse{
+    background: transparent;
+    &.collapse{
+      display: block!important;
+    }
+    .navbar-nav{
+      padding: 15px 0 0 20px;
+      >li{
+        margin: 0 10px;
+      }
+      > li a {
+        padding: 0;
+        &:hover{
+          background: transparent;
+        }
+      }
+      .active a{
+        border-bottom: 2px solid $color-green2;
+      }
+    }
+    .navbar-right{
+      display: block;
+      text-align: right;
+      padding-top: 16px;
+      padding-right: 25px;
+      li p{
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .navbar-inner{
+    left: 261px;
+    top: 45px;
+    .nav{
+      .tempr-swither{
+        margin-right: 4px;
+        a{
+          padding: 1px 17px 2px 13px;
+          font-size: $font-size-xlarge;
+          border: 2px solid $color-light-gray3;
+        }
+      }
+      .fav-location{
+        margin-left: 24px;
+      }
+    }
+
+  }
+  .download-app{
+    color: $color-copy-gray2;
+    a{
+      color: $color-green3;
+      font-size: $font-size-xlarge;
+      margin-right: 5px;
+      margin-left: 5px;
+      &:first-child{
+        margin-left: 0;
+      }
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+
+
+
+
+
+
 }

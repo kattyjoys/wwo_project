@@ -1,43 +1,51 @@
 @import "_variables";
 
 //base styles
-
+html{
+  height: 100%;
+}
 body {
-  background: $color-light-gray1;
-  font-family: $font-lato;
+  height: 100%;
+  background-color: $color-white;
+  background: linear-gradient(to bottom,  #61a447 0px, #ffffff 626px) no-repeat; /* W3C */
+
+  font-family: $font-ptsans;
   font-size: $font-size-normal;
+  color: $color-black;
 }
 
 h1 {
-  font-family: $font-montserrat;
-  font-weight: bold;
+  font-family: $font-gothamprobold;
+  font-weight: normal;
   font-size: $font-size-huge;
 }
 
 h2 {
-  font-family: $font-montserrat;
-  font-weight: bold;
+  font-family: $font-gothamprobold;
+  font-weight: normal;
   font-size: $font-size-xlarge;
-  color: $color-accent;
   padding: 10px 0;
 }
 
 h4 {
-  font-family: $font-montserrat;
-  font-weight: bold;
+  font-family: $font-gothamprobold;
+  font-weight: normal;
   font-size: $font-size-large;
-  color: $color-accent;
   padding: 10px 0;
 }
 
 h5 {
-  font-family: $font-montserrat;
-  font-weight: bold;
+  font-family: $font-gothamprobold;
+  font-weight: normal;
   font-size: $font-size-normal;
-  color: $color-accent;
   padding: 10px 0;
 }
 
+.main-container{
+  max-width: 1200px;
+  background-color: $color-white;
+  min-height: 100%;
+}
 .navbar {
   border-radius: 0;
   margin-bottom: 0;
@@ -50,16 +58,15 @@ h5 {
   font-size: $font-size-small;
 }
 
-.btn-primary {
-  font-size: $font-size-large;
-  font-family: $font-montserrat;
-  padding: 10px 20px;
-}
+//.btn-primary {
+//  font-size: $font-size-large;
+//  font-family: $font-montserrat;
+//  padding: 10px 20px;
+//}
 
 .modal-title {
-  color: $color-accent;
   font-size: $font-size-huge;
-  font-family: $font-montserrat;
+  //font-family: $font-montserrat;
   font-weight: 700;
   line-height: 1.1;
   text-align: center;
@@ -73,4 +80,8 @@ h5 {
   margin-top: -20px;
 }
 
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus{
+  background: transparent;
+  border-color: transparent;
+}
 
