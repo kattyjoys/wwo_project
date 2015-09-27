@@ -4,6 +4,7 @@
 @import "_variables";
 @import "fonts";
 @import "base";
+@import "forms";
 
 //if lt IE 10
 .browsehappy {
@@ -17,7 +18,8 @@
 /* Extra small devices (phones, less than 768px) */
 
 /*HEADER*/
-.banner-place{
+.banner-place,
+.cont-banner-place{
   display: none;
 }
 .navbar-brand{
@@ -29,7 +31,7 @@
 }
 
 .navbar-header{
-  padding: 16px 4px 9px 16px;
+  padding: 16px 4px 17px 16px;
 }
 .navbar-toggle .icon-bar{
   height: 3px;
@@ -81,12 +83,209 @@
   }
 }
 
+/*CONTENT*/
+.search-block{
+  padding-left: 30px;
+}
+.search-cover label{
+  display: none;
+}
+
+.forecast-block{
+  padding-left: 20px;
+  p{
+    color: $color-copy-gray3;
+  }
+  .media{
+    padding: 0 0 0 6px;
+    margin-bottom: 15px;
+  }
+  .media-left{
+    padding-right: 20px;
+  }
+  .media-holder{
+    display: block;
+    width: 64px;
+  }
+
+  .media-heading{
+    color: $color-black;
+    margin-bottom: 10px;
+  }
+  h2{
+    margin-bottom: 0;
+    padding-bottom: 5px;
+  }
+  p{
+    margin-bottom: 16px;
+  }
+  .temperature{
+    color: $color-black;
+    font-family: $font-gothamprobold;
+    font-size: $font-size-large;
+    margin-bottom: -3px;
+    letter-spacing: 1px;
+    span{
+      color: $color-light-blue;
+    }
+  }
+}
+.next-day-forecast{
+  margin-bottom: 53px;
+  .next-day{
+    display: inline-block;
+    margin: 0 15px;
+    text-align: center;
+    img{
+      margin-bottom: 10px;
+    }
+    p:last-child{
+      font-size: $font-size-small;
+    }
+  }
+  .btn-wrapper{
+    padding-top: 15px;
+  }
+}
+.arrow-right {
+  position: relative;
+  background: $color-white;
+  display: inline-block;
+  width: 23px;
+  height: 1px;
+  vertical-align: middle;
+  margin: 0 10px 0 5px;
+}
+.arrow-right:after {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 255, 255, 0);
+  border-left-color: $color-white;
+  border-width: 4px;
+  margin-top: -4px;
+}
+
+.top-countr-wrapper{
+  margin-bottom: 34px;
+}
+.top-countr-wrapper ul{
+  display: inline-block;
+  &:first-child{
+    margin-right: 75px;
+  }
+  li{
+    margin-bottom: 9px;
+    a{
+      color: $color-green5;
+      font-family: $font-gothampromed;
+    }
+  }
+}
+.i-globo{
+  background: url($icons_image_dir + "globo.png") no-repeat left center;
+  padding: 12px 0 7px 38px;
+  margin-bottom: 17px;
+}
+.i-flag{
+  background: url($icons_image_dir + "flag.png") no-repeat left center;
+  padding: 4px 0 12px 36px;
+  margin-bottom: 16px;
+}
+
+/*tabs*/
+.tabs{
+  .nav-tabs{
+    border-bottom: 5px solid $color-green5;
+    & > li{
+      margin-bottom: -10px;
+    }
+    & > li.active > a,
+    & > li.active > a:hover,
+    & > li.active > a:focus{
+      border-left: 5px solid $color-green5;
+      border-right: 5px solid $color-green5;
+      border-top: 5px solid $color-green5;
+      border-bottom: 1px;
+      background: $color-white;
+      color: $color-green4;
+    }
+    & > li > a{
+      border-width: 5px;
+      border-radius: 0;
+      color: $color-green4;
+      font-family: $font-gothamprobold;
+      font-size: $font-size-small;
+      padding: 16px 9px 19px 4px;
+      &:hover{
+        border-color: transparent;
+        background: transparent;
+      }
+    }
+  }
+  .tab-content{
+    border-bottom: 5px solid $color-green5;
+    border-left: 5px solid $color-green5;
+    border-right: 5px solid $color-green5;
+
+  }
+}
+
+.tab-content{
+  .forecast-block{
+    padding: 40px 15px 0 13px ;
+    .media{
+      margin-bottom: 33px;
+    }
+    .btn-wrapper{
+      padding-top: 30px;
+    }
+  }
+  .next-day-forecast{
+    margin-bottom: 23px;
+  }
+}
+
+.news-block{
+  display: none;
+}
+
+/*FOOTER*/
+.footer{
+  height: 250px;
+  .navbar-header{
+    padding-left: 0;
+    .navbar-brand{
+      width: 158px;
+      height: 63px;
+    }
+  }
+  .navbar-toggle{
+    margin-top: 14px;
+  }
+}
+.footer-lists{
+  ul{
+    padding-left: 20px;
+    > li{
+      padding-bottom: 10px;
+      text-transform: uppercase;
+      font-size: $font-size-xsmall;
+      font-family: $font-gothampromed;
+      > a{
+        color: $color-copy-gray1;
 
 
+      }
+    }
+  }
 
-
-
-
+}
 
 
 /* Small devices (tablets, 768px and up) */
@@ -114,8 +313,11 @@
     font-family: $font-gothamproreg;
     letter-spacing: 1px;
     font-size: $font-size-small;
-    .fa-star-o{
+    .fa{
       font-size: $font-size-large;
+    }
+    .fa-star{
+      color: $color-yellow;
     }
     a{
       color: $color-light-gray4 ;
@@ -150,11 +352,118 @@
     }
   }
 
+  /*CONTENT*/
+  .small-dev-show{
+    display: none;
+  }
+
+  .cont-banner-place{
+    display: block;
+    border: 5px solid $color-light-gray2;
+    text-align: center;
+    padding: 15px;
+    width: 340px;
+    img{
+      display: block;
+    }
+  }
+
+  .search{
+    margin-bottom: 40px;
+    width: 340px;
+  }
+  .search-cover{
+    background: $color-light-green2;
+    padding: 27px 30px 50px 28px;
+    label{
+      display: block;
+      font-family: $font-gothampromed;
+      font-size: $font-size-xsmall;
+      color: $color-white;
+      letter-spacing: 1px;
+      padding-bottom: 9px;
+    }
+  }
+  .search .search-btn{
+    display: block;
+    float: right;
+    color: $color-white;
+    font-size: $font-size-xsmall;
+    letter-spacing: 2px;
+    background: $color-green5;
+    padding: 8px 17px 9px 19px;
+    .fa{
+      display: none;
+    }
+    .btn-placeholder{
+      display: inline;
+    }
+  }
+
+  .forecast-block{
+    padding-left: 5px;
+    h2{
+      margin-top: -5px;
+      padding-top: 0;
+    }
+  }
+  .next-day-forecast{
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .countries-block{
+    padding-left: 30px;
+    .i-globo{
+      margin-top: 5px;
+
+    }
+  }
+  .map-wrapper{
+    width: 340px;
+    height: 330px;
+    border: 5px solid $color-green5;
+    margin-bottom: 30px;
+  }
+
+  .tabs{
+    margin-bottom: 20px;
+  }
+
+  .news-block{
+    display: block;
+    padding-left: 3px;
+    h1{
+      font-size: 20px;
+      margin-bottom: 24px;
+    }
+    .forecast-block{
+      padding-left: 0;
+    }
+    .media{
+      padding-left: 46px;
+      margin-bottom: 37px;
+      .media-body p{
+        padding-left: 10px;
+      }
+    }
+    .btn{
+      margin-top: 10px;
+      margin-left: 85px;
+    }
+  }
+
+  /*FOOTER*/
+  .footer{
+    background-color: $color-light-gray3;
+  }
+
+
 
 }
 
 
-/* Large devices (large desktops, 1800px and up) */
+/* Large devices (large desktops, 1180px and up) */
 @media (min-width: $screen-lg-min) {
   .banner-place{
     display: block;
@@ -166,6 +475,10 @@
   }
 
   /*HEADER*/
+  .main-header{
+    margin-bottom: 27px;
+  }
+
   .navbar-header{
     float: left;
     padding: 0;
@@ -241,7 +554,91 @@
     }
   }
 
+  /*CONTENT*/
 
+  .search-cover{
+    width: 340px;
+  }
+
+  .media{
+    margin-bottom: 25px;
+  }
+
+  .countries-block{
+    .i-globo{
+      margin-top: -12px;
+    }
+    .map-wrapper{
+      margin-bottom: 50px;
+    }
+    .i-flag{
+      margin-left: 10px;
+      margin-bottom: 10px;
+    }
+    .top-countr-wrapper{
+      padding-left: 40px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .news-block{
+    margin-bottom: 40px;
+    text-align: center;
+    h1{
+      font-size: 30px;
+      padding-left: 28px;
+      text-align: left;
+    }
+    .forecast-block{
+      text-align: left;
+      padding: 16px 130px 0 35px;
+      display: inline-block;
+      border-right: 1px solid $color-light-gray5;
+      &:first-child{
+        padding-left: 25px;
+      }
+      &:last-child{
+        border: none;
+      }
+    }
+    .media{
+      padding-left: 7px;
+      margin-bottom: 0;
+      .btn{
+        margin-top: 0;
+        margin-left: -7px;
+      }
+    }
+    .media-body{
+      width: auto;
+    }
+
+  }
+
+  /*FOOTER*/
+.footer{
+  height: 300px;
+  max-width: 1200px;
+  margin: 0 auto;
+  .navbar-nav{
+    display: none;
+  }
+  .download-app{
+    li{
+      display: none;
+    }
+  }
+  .colC, .colD, .colE{
+    ul li{
+      &:first-child{
+        color: $color-green2;
+        a{
+          color: $color-green2;
+        }
+      }
+    }
+  }
+}
 
 
 

@@ -1,0 +1,49 @@
+@import "_variables";
+
+.search{
+  .form-control{
+    border: 2px solid $color-light-green;
+    border-radius: 0;
+    color: $color-copy-gray1;
+    font-size: $font-size-xsmall;
+    font-family: $font-gothampromed;
+    height: 30px;
+    width: 82%;
+    display: inline-block;
+  }
+  .search-btn{
+    background:transparent;
+    display: inline-block;
+    .btn-placeholder{
+      display: none;
+    }
+    .fa-search{
+      font-size: $font-size-large;
+      color: $color-green4;
+    }
+  }
+}
+
+
+@media (min-width: $screen-sm-min) {
+  .search{
+    .form-control{
+      border: none;
+      width: 282px;
+      height: 33px;
+      margin-bottom: 10px;
+    }
+    ::-webkit-input-placeholder {
+      color: transparent;
+    }
+    :-moz-placeholder {
+      color: transparent;
+    }
+    ::-moz-placeholder {
+      color: transparent;
+    }
+    :-ms-input-placeholder {
+      color: transparent;
+    }
+  }
+}

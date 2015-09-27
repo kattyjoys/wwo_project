@@ -14,18 +14,26 @@ $color-light-gray1:#bfbfbf;
 $color-light-gray2:#d1d1d1;
 $color-light-gray3:#f8f8f8;
 $color-light-gray4:#b6b6b6;
+$color-light-gray5:#e5e5e5;
 //
 $color-copy-gray1:#505050;
 $color-copy-gray2:#d4d4d4;
-//$color-copy-gray3:#cfcfcf;
+$color-copy-gray3:#afafaf;
 //$color-copy-gray4:#9e9e9e;
 
 $color-green1:#5aa23b;
 $color-green2:#82be63;
 $color-green3:#a4bf55;
+$color-green4:#4b942d;
+$color-green5:#519637;
+
 $color-light-green:#a9d992;
+$color-light-green2:#a3d68a;
+$color-light-green3:#71b450;
+$color-light-green4:#eff9e7;
 
-
+$color-light-blue:#72b5ce;
+$color-yellow:#fae005;
 
 $color-black:#000;
 
@@ -42,6 +50,7 @@ $font-ptsans:"PT Sans", sans-serif;
 
 
 //font sizes (at least the common ones)
+$font-size-xsmall:10px;
 $font-size-small:12px;
 $font-size-normal:14px;
 $font-size-large: 18px;
@@ -62,45 +71,10 @@ $font-size-huge:36px;
 /*---------------------------------
     Bootstrap variables
   ---------------------------------*/
-$screen-sm-min: 768px;
-$screen-md-min: 992px;
-$screen-lg-min: 1180px;
+$screen-sm-min: 768px !default;
+$screen-md-min: 992px !default;
+$screen-lg: 1180px !default;
 
 
-//$link-color: $color-accent;
-//$link-hover-color: $color-accent;
-//$btn-default-color: $color-accent;
-//$btn-default-bg:  transparent;
-//$btn-default-border: $color-accent;
-//
-//$btn-info-color: $color-accent;
-//$btn-info-bg: $color-white;
-//$btn-info-border: $color-white;
-//
-//$btn-primary-color:              #fff;
-//$btn-primary-bg:                 $color-accent;
-//$btn-primary-border:             $color-accent;
-//
-//$btn-font-weight: 900;
-//
-//$modal-lg:                    800px !default;
-//$modal-md:                    500px !default;
-//$modal-header-border-color: transparent;
-//$modal-inner-padding:         10px 45px !default;
-//$modal-title-padding:         40px 45px 10px !default;
-//$modal-content-bg:               #f3f5f9;
-//
-//$input-bg:                       #e4e7ed !default;
-//$input-color:                    #a1a1a1 !default;
-//$input-border:                   #e4e7ed !default;
-//
-////** Horizontal line color.
-//$hr-border:                   $color-light-gray3 !default;
-//
-////** `.form-group` margin
-//$form-group-margin-bottom:       20px !default;
-//
-////** Modal backdrop opacity
-//$modal-backdrop-opacity:      .7 !default;
 
 

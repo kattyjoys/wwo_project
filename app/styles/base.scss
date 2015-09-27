@@ -7,11 +7,12 @@ html{
 body {
   height: 100%;
   background-color: $color-white;
-  background: linear-gradient(to bottom,  #61a447 0px, #ffffff 626px) no-repeat; /* W3C */
+  background: linear-gradient(to bottom,  #61a447 0px, #ffffff 626px) no-repeat;
 
   font-family: $font-ptsans;
   font-size: $font-size-normal;
   color: $color-black;
+  padding-bottom: 96px;
 }
 
 h1 {
@@ -25,6 +26,7 @@ h2 {
   font-weight: normal;
   font-size: $font-size-xlarge;
   padding: 10px 0;
+  color: $color-green4;
 }
 
 h4 {
@@ -38,7 +40,11 @@ h5 {
   font-family: $font-gothamprobold;
   font-weight: normal;
   font-size: $font-size-normal;
-  padding: 10px 0;
+  color: $color-green4;
+}
+
+a:focus{
+  outline: none;
 }
 
 .main-container{
@@ -52,17 +58,49 @@ h5 {
 }
 
 .btn {
-  border-width: 2px;
+  border-radius: 0;
+  border-width: 1px;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-size: $font-size-small;
 }
 
-//.btn-primary {
-//  font-size: $font-size-large;
-//  font-family: $font-montserrat;
-//  padding: 10px 20px;
-//}
+.btn-default{
+  background-color: $color-green5;
+  border-color: $color-green5;
+  color: $color-white;
+  font-family: $font-gothamprobold;
+  padding: 6px 10px;
+  &:hover,
+  &:focus,
+  &.focus{
+    background-color: $color-green5;
+    border-color: $color-green5;
+    color: $color-white;
+  }
+}
+
+.btn-primary{
+  background-color: $color-light-green4;
+  border-color: $color-light-green;
+  color: $color-green4;
+  font-family: $font-gothamprobold;
+  padding: 6px 10px;
+  &:hover,
+  &:focus,
+  &.focus{
+    background-color: $color-white;
+    border-color: $color-light-green;
+    color: $color-green4;
+  }
+  .arrow-right{
+    background: $color-light-green3;
+  }
+  .arrow-right:after{
+    border-color: rgba(113, 180, 80, 0);
+    border-left-color: $color-light-green3;
+  }
+}
 
 .modal-title {
   font-size: $font-size-huge;

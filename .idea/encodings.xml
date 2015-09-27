@@ -7,9 +7,8 @@
     <file url="file://$PROJECT_DIR$/app/styles/_variables.scss" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/styles/base.scss" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/styles/fonts.scss" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/styles/main.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/styles/forms.scss" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/styles/main.scss" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bower.json" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/bower_components/font-awesome/scss/_variables.scss" charset="UTF-8" />
   </component>
 </project>
