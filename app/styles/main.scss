@@ -22,6 +22,9 @@
 .cont-banner-place{
   display: none;
 }
+.navbar{
+  background-color: $color-white;
+}
 .navbar-brand{
   display: inline-block;
   width: 132px;
@@ -32,6 +35,7 @@
 
 .navbar-header{
   padding: 16px 4px 17px 16px;
+  background-color: $color-white;
 }
 .navbar-toggle .icon-bar{
   height: 3px;
@@ -200,6 +204,7 @@
 
 /*tabs*/
 .tabs{
+  margin-bottom: 20px;
   .nav-tabs{
     border-bottom: 5px solid $color-green5;
     & > li{
@@ -255,21 +260,74 @@
   display: none;
 }
 
-/*FOOTER*/
-.footer{
-  height: 250px;
-  .navbar-header{
-    padding-left: 0;
-    .navbar-brand{
-      width: 158px;
-      height: 63px;
+.blog-article-wrapper{
+  margin-bottom: 15px;
+  h4{
+    padding-left: 5px;
+    margin-bottom: 20px;
+  }
+  .thumbnail{
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin: 0 -15px 10px -15px;
+    .caption{
+      padding-left: 14px;
+      h2{
+        line-height: 30px;
+        margin-top: 6px;
+        margin-bottom: 0;
+      }
+      p{
+        color: $color-black;
+      }
+    }
+    &:hover{
+      text-decoration: none;
     }
   }
-  .navbar-toggle{
-    margin-top: 14px;
+}
+
+.commercial{
+  margin-bottom: 26px;
+  .thumbnail{
+    padding: 0;
+    margin: 0 -15px 20px -15px;
+    img{
+      display: block;
+      border: 5px solid #ddf4cc;
+    }
+    position: relative;
+    border: none;
+    .caption{
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+      bottom: 20px;
+      width: 320px;
+      padding: 0;
+      p{
+        margin: 0;
+        text-align: center;
+      }
+      .btn{
+        margin: 0 18px;
+      }
+    }
   }
 }
-.footer-lists{
+
+/*FOOTER*/
+
+.footer{
+  background-color: $color-light-gray3;
+  height: 250px;
+  padding: 17px 4px 0 4px;
+  .navbar-brand{
+    width: 158px;
+    height: 63px;
+    margin-bottom: 20px;
+  }
   ul{
     padding-left: 20px;
     > li{
@@ -284,8 +342,8 @@
       }
     }
   }
-
 }
+
 
 
 /* Small devices (tablets, 768px and up) */
@@ -426,10 +484,6 @@
     margin-bottom: 30px;
   }
 
-  .tabs{
-    margin-bottom: 20px;
-  }
-
   .news-block{
     display: block;
     padding-left: 3px;
@@ -453,10 +507,37 @@
     }
   }
 
-  /*FOOTER*/
-  .footer{
-    background-color: $color-light-gray3;
+  .blog-article-wrapper{
+    h4{
+      padding-left: 15px;
+      margin-bottom: 15px;
+    }
+    .thumbnail{
+      margin-left: 15px;
+      margin-right: 15px;
+
+    }
   }
+
+  .commercial{
+    margin-bottom: 45px;
+  }
+
+  .top-cont-wrapper{
+    margin-bottom: 30px;
+  }
+
+  /*FOOTER*/
+.footer{
+  padding: 35px 8px 0 8px;
+  .navbar-brand{
+    width: 232px;
+    height: 93px;
+  }
+  ul{
+    padding-top: 33px;
+  }
+}
 
 
 
@@ -475,8 +556,22 @@
   }
 
   /*HEADER*/
+  body {
+    background-color: $color-white;
+    background: linear-gradient(to bottom,  #61a447 0px, #ffffff 626px) no-repeat;
+    padding-top: 0;
+  }
+
   .main-header{
     margin-bottom: 27px;
+  }
+
+  .navbar{
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .navbar-fixed-top{
+    position: relative;
   }
 
   .navbar-header{
@@ -522,7 +617,8 @@
   }
   .navbar-inner{
     left: 261px;
-    top: 45px;
+    top: 44px;
+    width: auto;
     .nav{
       .tempr-swither{
         margin-right: 4px;
@@ -555,6 +651,9 @@
   }
 
   /*CONTENT*/
+  .top-cont-wrapper{
+    margin-bottom: 0;
+  }
 
   .search-cover{
     width: 340px;
@@ -615,32 +714,49 @@
 
   }
 
-  /*FOOTER*/
-.footer{
-  height: 300px;
-  max-width: 1200px;
-  margin: 0 auto;
-  .navbar-nav{
-    display: none;
-  }
-  .download-app{
-    li{
-      display: none;
+
+  .blog-article-wrapper{
+    margin-bottom: 25px;
+    h4{
+      font-size: 30px;
+      margin-bottom: 15px;
+      margin-top: 10px;
     }
   }
-  .colC, .colD, .colE{
-    ul li{
-      &:first-child{
-        color: $color-green2;
-        a{
+
+  .commercial{
+    margin-bottom: 55px;
+  }
+
+  /*FOOTER*/
+  .footer{
+    height: 310px;
+    padding: 23px 20px 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    .navbar-brand{
+      width: 190px;
+      height: 76px;
+    }
+    ul {
+      padding-top: 30px;
+    }
+    .download-app{
+      padding-top: 0;
+      li{
+        display: none;
+      }
+    }
+    .colC, .colD, .colE{
+      ul {
+        padding-top: 5px;
+      }
+      ul li{
+        &:first-child{
           color: $color-green2;
+          font-family: $font-gothamprobold;
         }
       }
     }
   }
-}
-
-
-
-
 }

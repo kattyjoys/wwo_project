@@ -7,12 +7,10 @@ html{
 body {
   height: 100%;
   background-color: $color-white;
-  background: linear-gradient(to bottom,  #61a447 0px, #ffffff 626px) no-repeat;
-
   font-family: $font-ptsans;
   font-size: $font-size-normal;
   color: $color-black;
-  padding-bottom: 96px;
+  padding-top: 96px;
 }
 
 h1 {
@@ -74,8 +72,8 @@ a:focus{
   &:hover,
   &:focus,
   &.focus{
-    background-color: $color-green5;
-    border-color: $color-green5;
+    background-color: $color-green1;
+    border-color: $color-green1;
     color: $color-white;
   }
 }
@@ -99,6 +97,21 @@ a:focus{
   .arrow-right:after{
     border-color: rgba(113, 180, 80, 0);
     border-left-color: $color-light-green3;
+  }
+}
+
+.btn-info{
+  background-color: $color-black;
+  border-color: $color-black;
+  color: $color-white;
+  font-family: $font-gothamprobold;
+  padding: 4px 18px;
+  &:hover,
+  &:focus,
+  &.focus{
+    background-color: $color-black;
+    border-color: $color-black;
+    color: $color-white;
   }
 }
 

@@ -58,17 +58,6 @@ $font-size-xlarge: 24px;
 $font-size-huge:36px;
 
 /*---------------------------------
-    Mixins
-  ---------------------------------*/
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-  -moz-border-radius: $radius;
-  -ms-border-radius: $radius;
-  border-radius: $radius;
-}
-
-
-/*---------------------------------
     Bootstrap variables
   ---------------------------------*/
 $screen-sm-min: 768px !default;
