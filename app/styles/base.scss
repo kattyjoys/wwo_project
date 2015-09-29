@@ -109,8 +109,8 @@ a:focus{
   &:hover,
   &:focus,
   &.focus{
-    background-color: $color-black;
-    border-color: $color-black;
+    background-color: $color-light-black;
+    border-color: $color-light-black;
     color: $color-white;
   }
 }
