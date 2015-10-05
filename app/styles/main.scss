@@ -334,6 +334,7 @@
     background: url($icons_image_dir + "side_menu_icons.png") no-repeat center;
     background-size: cover;
     margin-right: -2px;
+    vertical-align: top;
     &.active{
       position: relative;
       &:before{
