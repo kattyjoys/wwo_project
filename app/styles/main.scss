@@ -326,7 +326,7 @@
 .side-menu{
   margin-top: 20px;
   font-size: 0;
-  padding-left: 30px;
+  padding-left: 0;
   button{
     width: 33px;
     height: 33px;
@@ -384,6 +384,7 @@
 
 .inner-page-menu{
   font-size: 0;
+  margin-bottom: 18px;
   button{
     font-family: $font-gothampromed;
     letter-spacing: 1px;
@@ -396,23 +397,114 @@
     text-align: left;
     margin-bottom: 2px;
     margin-right: 3px;
-    &.active{
-      background-color: $color-green5;
-      color: $color-white;
-    }
     &:hover{
       background-color: $color-light-green2;
       color: $color-white;
+    }
+    &.active{
+      background-color: $color-green5;
+      color: $color-white;
+      &:hover{
+        background-color: $color-green5;
+        cursor: default;
+      }
+    }
+  }
+}
+
+.summary-block{
+  .table{
+    font-size: $font-size-small;
+    thead{
+      color: $color-green1;
+      text-transform: uppercase;
+      font-weight: bold;
+      th{
+        border: none;
+      }
+    }
+    tbody{
+      th{
+        border: none;
+        font-size: $font-size-small;
+        color: $color-green1;
+        font-weight: normal;
+      }
+      td{
+        border: none;
+      }
     }
   }
 }
 
 .summary-heading{
+  margin-bottom: 10px;
   h4{
     font-size: 16px;
+    line-height: 24px;
+    padding-top: 0;
     span{
       display: block;
     }
+  }
+}
+
+.summary-tabs{
+  margin-bottom: 34px;
+  ul > li{
+    font-family: $font-gothampromed;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: $color-green1;
+    letter-spacing: 1px;
+    border-right: 1px solid $color-light-gray5;
+    margin-bottom: 6px;
+    &:last-child{
+      border-right: none;
+    }
+    a{
+      color: $color-green1;
+      padding: 0 10px;
+      border: none;
+      &:hover{
+        background-color: transparent;
+        border-color: transparent;
+      }
+    }
+    &.active{
+      text-decoration: underline;
+      > a,
+      > a:hover,
+      > a:focus{
+        border: none;
+        border-radius: 0;
+        color: $color-green1;
+      }
+    }
+  }
+  .nav-tabs {
+    margin-bottom: 13px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid $color-light-green;
+  }
+}
+
+
+.inner-page-wrapper{
+  .search-block{
+    padding-left: 15px;
+  }
+}
+.inner-cont{
+  margin-bottom: 30px;
+}
+
+.inner-cont p{
+  line-height: 24px;
+  font-size: $font-size-small;
+  margin-bottom: 24px;
+  a{
+    color: $color-green1;
   }
 }
 
@@ -450,11 +542,27 @@
 /* Small devices (tablets, 768px and up) */
 @media (min-width: $screen-sm-min) {
   /*HEADER*/
+
+  .navbar-brand{
+    width: 163px;
+    height: 65px;
+  }
+  .navbar > .container .navbar-brand,
+  .navbar > .container-fluid .navbar-brand{
+    margin-left: 0;
+  }
+
+  .navbar-inner{
+    left: 212px;
+    top: 40px;
+  }
+
   .navbar-header{
     float: none;
   }
   .navbar-toggle{
     display: block;
+    margin-top: 20px;
   }
   .navbar-collapse{
     .fav-location{
@@ -472,6 +580,7 @@
     font-family: $font-gothamproreg;
     letter-spacing: 1px;
     font-size: $font-size-small;
+    margin-left: 50px;
     .fa{
       font-size: $font-size-large;
     }
@@ -633,7 +742,8 @@
 
   /*SUMMARY*/
   .side-menu {
-    padding-left: 0;
+    padding-left: 34px;
+    margin-top: 10px;
     button {
       width: 50px;
       height: 50px;
@@ -684,6 +794,10 @@
   }
 
   .breadcrumb{
+    padding-top: 6px;
+    padding-left: 0;
+    margin-bottom: 0;
+    font-size: $font-size-small;
     display: block;
     background-color: transparent;
     & > li + li:before{
@@ -698,11 +812,90 @@
   }
 
   .inner-page-menu{
+    margin: 20px 0 48px 0;
     button{
       padding: 10px 7px 10px 11px;
       width: auto;
       text-align: center;
       margin-right: 2px;
+    }
+  }
+
+  .summary-tabs{
+    margin-bottom: 76px;
+    h4{
+      margin-bottom: 18px;
+    }
+    .tab-content p{
+      font-size: $font-size-normal;
+    }
+    .nav-tabs{
+      border-bottom: 5px solid $color-light-gray5;
+      padding-bottom: 0;
+      margin-bottom: 26px;
+    }
+    ul > li{
+      font-size: $font-size-small;
+      a{
+        padding: 0 12px;
+      }
+      &.active{
+        text-decoration: none;
+        position: relative;
+        &:before{
+          content: "";
+          position: absolute;
+          display: block;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 9.5px 10px 9.5px;
+          border-color: transparent transparent $color-green5 transparent;
+          left: 50%;
+          transform: translate(-50%, 0);
+          bottom: -12px;
+          z-index: 2;
+          //transition: all 2s ease;
+        }
+      }
+    }
+  }
+
+  .media.summary-heading{
+    margin-bottom: 8px;
+    h4{
+      font-size: $font-size-xlarge;
+      span{
+        font-size: $font-size-large;
+      }
+    }
+  }
+
+  .summary-block{
+    .table{
+      margin-bottom: 30px;
+      font-size: $font-size-normal;
+      thead{
+        th{
+          padding-bottom: 17px;
+        }
+      }
+      tbody{
+        th,
+        td{
+          font-size: $font-size-normal;
+          border-bottom: 1px solid $color-light-gray5;
+          padding-bottom: 16px;
+          padding-top: 13px;
+        }
+      }
+    }
+  }
+
+  .inner-cont{
+    padding-right: 30px;
+    h2{
+      margin-top: 0;
     }
   }
 
@@ -893,7 +1086,6 @@
 
   }
 
-
   .blog-article-wrapper{
     margin-bottom: 25px;
     h4{
@@ -905,6 +1097,19 @@
 
   .commercial{
     margin-bottom: 55px;
+  }
+
+  /*SUMMARY*/
+  .inner-cont{
+    padding-left: 30px;
+  }
+
+  .side-menu{
+    margin-top: 0;
+  }
+
+  .breadcrumb{
+    padding-top: 0;
   }
 
   /*FOOTER*/
