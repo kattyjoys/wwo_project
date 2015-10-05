@@ -324,6 +324,7 @@
 
 /*SUMMARY*/
 .side-menu{
+  margin-top: 20px;
   font-size: 0;
   padding-left: 30px;
   button{
@@ -333,7 +334,21 @@
     background: url($icons_image_dir + "side_menu_icons.png") no-repeat center;
     background-size: cover;
     margin-right: -2px;
+    &.active{
+      position: relative;
+      &:before{
+        content: "";
+        position: absolute;
+        width: 33px;
+        height: 33px;
+        border: 3px solid $color-light-green2;
+        left: -2px;
+        top: -2px;
+
+      }
+    }
   }
+
   .btn1{
     background-position: 0 -3px;
   }
@@ -362,6 +377,46 @@
     background-position: 0 -296px;
   }
 }
+
+.breadcrumb{
+  display: none;
+}
+
+.inner-page-menu{
+  font-size: 0;
+  button{
+    font-family: $font-gothampromed;
+    letter-spacing: 1px;
+    font-size: $font-size-xsmall;
+    color: $color-copy-gray4;
+    background: $color-light-gray5;
+    border: none;
+    padding: 4px 0 4px 14px;
+    width: 138px;
+    text-align: left;
+    margin-bottom: 2px;
+    margin-right: 3px;
+    &.active{
+      background-color: $color-green5;
+      color: $color-white;
+    }
+    &:hover{
+      background-color: $color-light-green2;
+      color: $color-white;
+    }
+  }
+}
+
+.summary-heading{
+  h4{
+    font-size: 16px;
+    span{
+      display: block;
+    }
+  }
+}
+
+
 
 /*FOOTER*/
 
@@ -574,6 +629,81 @@
 
   .top-cont-wrapper{
     margin-bottom: 30px;
+  }
+
+  /*SUMMARY*/
+  .side-menu {
+    padding-left: 0;
+    button {
+      width: 50px;
+      height: 50px;
+      border: 3px solid $color-light-gray5;
+      margin-bottom: -3px;
+      background-size: auto;
+      &.active {
+        position: relative;
+        &:before {
+          content: "";
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          border: 5px solid $color-light-green2;
+          left: -3px;
+          top: -3px;
+
+        }
+      }
+    }
+    .btn1{
+      background-position: 4px -1px;
+    }
+    .btn2{
+      background-position: 4px -47px;
+    }
+    .btn3{
+      background-position: 4px -95px;
+    }
+    .btn4{
+      background-position: 4px -144px;
+    }
+    .btn5{
+      background-position: 4px -189px;
+    }
+    .btn6{
+      background-position: 4px -235px;
+    }
+    .btn7{
+      background-position: 4px -282px;
+    }
+    .btn8{
+      background-position: 4px -328px;
+    }
+    .btn9{
+      background-position: 4px -376px;
+    }
+  }
+
+  .breadcrumb{
+    display: block;
+    background-color: transparent;
+    & > li + li:before{
+      content: ">";
+    }
+    li,
+    li.active,
+    li a
+    {
+      color: $color-copy-gray3;
+    }
+  }
+
+  .inner-page-menu{
+    button{
+      padding: 10px 7px 10px 11px;
+      width: auto;
+      text-align: center;
+      margin-right: 2px;
+    }
   }
 
   /*FOOTER*/

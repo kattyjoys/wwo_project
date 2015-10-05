@@ -25,7 +25,7 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="container-fluid main-container">
+    <div class="container-fluid main-container summary-page">
       <div class="row banner-place">
         <div class="col-md-12 banner-body">
           <img src="images/pictures/pic1.jpg" alt="pic">
@@ -88,8 +88,8 @@
           </nav>
         </header>
       </div>
-      <div class="row top-cont-wrapper">
-        <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1 col-lg-4 col-lg-offset-0 search-block">
+      <div class="row inner-page-wrapper">
+        <div class="col-xs-12 visible-xs-block search-block">
           <form class="search" role="search">
             <div class="search-cover">
               <label>ENTER CITY / TOWN or ZIP</label>
@@ -104,327 +104,160 @@
             <img src="images/pictures/pic2.jpg" alt="pic">
           </div>
         </div>
-<!--side menu here-->
-        <div class="btn-group side-menu" role="group" aria-label="">
-          <button type="button" class="btn1"></button>
-          <button type="button" class="btn2"></button>
-          <button type="button" class="btn3"></button>
-          <button type="button" class="btn4"></button>
-          <button type="button" class="btn5"></button>
-          <button type="button" class="btn6"></button>
-          <button type="button" class="btn7"></button>
-          <button type="button" class="btn8"></button>
-          <button type="button" class="btn9"></button>
+        <div class="col-xs-12 col-sm-1">
+          <div class=" btn-group input-group side-menu" role="group" aria-label="">
+            <button type="button" class="btn1 active"></button>
+            <button type="button" class="btn2"></button>
+            <button type="button" class="btn3"></button>
+            <button type="button" class="btn4"></button>
+            <button type="button" class="btn5"></button>
+            <button type="button" class="btn6"></button>
+            <button type="button" class="btn7"></button>
+            <button type="button" class="btn8"></button>
+            <button type="button" class="btn9"></button>
+          </div>
         </div>
-<!-- -->
-        <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 forecast-block">
+
+
+        <div class="inner-cont col-xs-12 col-sm-11 col-lg-7">
+          <ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Country List</a></li>
+            <li><a href="#">Belarus</a></li>
+            <li class="active">Minsk</li>
+          </ol>
           <h2>MINSK</h2>
-          <div class="media">
-            <div class="media-left">
-              <span class="media-holder">
-                <img src="images/icons/cloudly.png" alt="pic">
-              </span>
-            </div>
-            <div class="media-body">
-              <p class="media-heading">Cloudy</p>
-              <p class="temperature">19°C  <span>|  12°C</span></p>
-              <p>Real feel 18°C</p>
-              <p>Wind: WNW at 7 mph/11.2 km/h<br>Humidity: 49%</p>
-            </div>
+          <strong>Local Time: Tue 04th Aug 11:08 am</strong><br>
+          <div class="btn-group inner-page-menu" role="group" aria-label="">
+            <button type="button" class="btn1 active">SUMMARY</button>
+            <button type="button" class="btn2">OUTLOOK</button>
+            <button type="button" class="btn3">TODAY</button>
+            <button type="button" class="btn4">TOMORROW</button>
+            <button type="button" class="btn5">THU</button>
+            <button type="button" class="btn6">FRI</button>
+            <button type="button" class="btn7">SAT</button>
+            <button type="button" class="btn8">MON</button>
+            <button type="button" class="btn9">1 to 15 DAYS</button>
           </div>
-          <div class="next-day-forecast clearfix">
-            <div class="next-day">
-              <p class="media-heading">Thu</p>
-              <img src="images/icons/cloudly_small.png">
-              <p>18°C</p>
-            </div>
-            <div class="next-day">
-              <p class="media-heading">Thu</p>
-              <img src="images/icons/cloudly_small.png">
-              <p>18°C</p>
-            </div>
-            <div class="next-day">
-              <p class="media-heading">Thu</p>
-              <img src="images/icons/cloudly_small.png">
-              <p>18°C</p>
-            </div>
-            <div class="btn-wrapper">
-              <a class="btn btn-default pull-right" href="#" role="button">FULL FORECAST <span class="arrow-right"></span></a>
-            </div>
-          </div>
-
-          <h5 class="i-flag small-dev-show">TOP HOLIDAY COUNTRIES</h5>
-          <div class="top-countr-wrapper small-dev-show">
-            <ul class="list-unstyled">
-              <li><a href="#">SPAIN</a></li>
-              <li><a href="#">FRANCE</a></li>
-            </ul>
-            <ul class="list-unstyled">
-              <li><a href="#">TURKEY</a></li>
-              <li><a href="#">UNITED KINGDOM</a></li>
-            </ul>
-          </div>
-
-          <div class="tabs" data-example-id="togglable-tabs">
+          <!--<div class="timer"></div>-->
+          <div class="bs-example bs-example-tabs" data-example-id="togglable-tabs">
             <ul id="myTabs" class="nav nav-tabs" role="tablist">
-              <li role="presentation" class="active">
-                <a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">VILNIUS</a>
-              </li>
-
-              <li role="presentation" class="">
-                <a href="#profile" role="tab" id="tab1" data-toggle="tab" aria-controls="profile" aria-expanded="false">WARSZAWA</a>
-              </li>
-
-              <li role="presentation" class="">
-                <a href="#profile" role="tab" id="tab2-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">WARSZAWA</a>
-              </li>
+              <li role="presentation" class=""><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="false">Home</a></li>
+              <li role="presentation" class="active"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="true">Profile</a></li>
             </ul>
             <div id="myTabContent" class="tab-content">
-              <div role="tabpanel" class="tab-pane fade active in" id="home" aria-labelledby="home-tab">
-                <div class="forecast-block">
-                  <div class="media">
-                    <div class="media-left">
-                      <span class="media-holder">
-                      <img src="images/icons/cloudly.png" alt="pic">
-                      </span>
-                    </div>
-                    <div class="media-body">
-                      <p class="media-heading">Cloudy</p>
-                      <p class="temperature">19°C  <span>|  12°C</span></p>
-                      <p>Real feel 18°C</p>
-                    </div>
-                  </div>
-                  <div class="next-day-forecast clearfix">
-                    <div class="next-day">
-                      <p class="media-heading">Thu</p>
-                      <img src="images/icons/cloudly_small.png">
-                      <p>18°C</p>
-                    </div>
-                    <div class="next-day">
-                      <p class="media-heading">Thu</p>
-                      <img src="images/icons/cloudly_small.png">
-                      <p>18°C</p>
-                    </div>
-                    <div class="next-day">
-                      <p class="media-heading">Thu</p>
-                      <img src="images/icons/cloudly_small.png">
-                      <p>18°C</p>
-                    </div>
-                    <div class="btn-wrapper">
-                      <a class="btn btn-primary pull-right" href="#" role="button">FULL FORECAST <span class="arrow-right"></span></a>
-                    </div>
-                  </div>
-                </div>
+              <div role="tabpanel" class="tab-pane fade" id="home" aria-labelledby="home-tab">
+                <h4>Minsk weather summary for coming week</h4>
+                <p>The maximum temperature for Minsk over the next 7 day will be 36C(or 97C) on Tuesday 11th August at around 2 pm.
+                  In the same week the minimum temperature will be 18C (or 64C) on Friday 7th August at around 5 am.
+                  Our Minsk weather forecaster is reporting Monday 10th August to be the wettest day in the coming week
+                  with around 2.30mm (or 0.1 inches) of rainfall. Make sure to carry an umbrella if you are out and about in Minsk.
+                  The windiest of all days will be Thursday 13th August as wind will reach 10mph (or 15kmph) at around 5 pm.</p>
               </div>
-              <div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="tab1">
-                <div class="forecast-block">
-                  <div class="media">
-                    <div class="media-left">
-                      <span class="media-holder">
-                      <img src="images/icons/cloudly.png" alt="pic">
-                      </span>
-                    </div>
-                    <div class="media-body">
-                      <p class="media-heading">Cloudy</p>
-                      <p class="temperature">19°C  <span>|  12°C</span></p>
-                      <p>Real feel 18°C</p>
-                    </div>
-                  </div>
-                  <div class="next-day-forecast clearfix">
-                    <div class="next-day">
-                      <p class="media-heading">Thu</p>
-                      <img src="images/icons/cloudly_small.png">
-                      <p>18°C</p>
-                    </div>
-                    <div class="next-day">
-                      <p class="media-heading">Thu</p>
-                      <img src="images/icons/cloudly_small.png">
-                      <p>18°C</p>
-                    </div>
-                    <div class="next-day">
-                      <p class="media-heading">Thu</p>
-                      <img src="images/icons/cloudly_small.png">
-                      <p>18°C</p>
-                    </div>
-                    <div class="btn-wrapper">
-                      <a class="btn btn-primary pull-right" href="#" role="button">FULL FORECAST <span class="arrow-right"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div role="tabpanel" class="tab-pane fade" id="dropdown1" aria-labelledby="tab2">
-                <div class="forecast-block">
-                  <div class="media">
-                    <div class="media-left">
-                      <span class="media-holder">
-                      <img src="images/icons/cloudly.png" alt="pic">
-                      </span>
-                    </div>
-                    <div class="media-body">
-                      <p class="media-heading">Cloudy</p>
-                      <p class="temperature">19°C  <span>|  12°C</span></p>
-                      <p>Real feel 18°C</p>
-                    </div>
-                  </div>
-                  <div class="next-day-forecast clearfix">
-                    <div class="next-day">
-                      <p class="media-heading">Thu</p>
-                      <img src="images/icons/cloudly_small.png">
-                      <p>18°C</p>
-                    </div>
-                    <div class="next-day">
-                      <p class="media-heading">Thu</p>
-                      <img src="images/icons/cloudly_small.png">
-                      <p>18°C</p>
-                    </div>
-                    <div class="next-day">
-                      <p class="media-heading">Thu</p>
-                      <img src="images/icons/cloudly_small.png">
-                      <p>18°C</p>
-                    </div>
-                    <div class="btn-wrapper">
-                      <a class="btn btn-primary pull-right" href="#" role="button">FULL FORECAST <span class="arrow-right"></span></a>
-                    </div>
-                  </div>
-                </div>
+              <div role="tabpanel" class="tab-pane fade active in" id="profile" aria-labelledby="profile-tab">
+                <h4>Minsk weather summary for coming week</h4>
+                <p>The maximum temperature for Minsk over the next 7 day will be 36C(or 97C) on Tuesday 11th August at around 2 pm.
+                  In the same week the minimum temperature will be 18C (or 64C) on Friday 7th August at around 5 am.
+                  Our Minsk weather forecaster is reporting Monday 10th August to be the wettest day in the coming week
+                  with around 2.30mm (or 0.1 inches) of rainfall. Make sure to carry an umbrella if you are out and about in Minsk.
+                  The windiest of all days will be Thursday 13th August as wind will reach 10mph (or 15kmph) at around 5 pm.</p>
               </div>
             </div>
           </div>
+
+
+
+
+          <!-- -->
+          <div class="summary-block">
+            <div class="media summary-heading">
+              <div class="media-left">
+                <img src="images/icons/cloudly.png">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Minsk
+                  <span>holiday weather summary at a glance</span>
+                </h4>
+              </div>
+            </div>
+            <table class="table">
+              <thead>
+              <tr>
+                <th>Weather Element</th>
+                <th>How Much?</th>
+                <th>When?</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <th scope="row">Max Temp:</th>
+                <td>36C</td>
+                <td>Otto</td>
+              </tr>
+              <tr>
+                <th scope="row">Min Tem:</th>
+                <td>18C</td>
+                <td>Thornton</td>
+              </tr>
+              <tr>
+                <th scope="row">Av. Max Temp:</th>
+                <td>35C</td>
+                <td>the Bird</td>
+              </tr>
+              <tr>
+                <th scope="row">Av/ Min Temp:</th>
+                <td>19C</td>
+                <td>the Bird</td>
+              </tr>
+              <tr>
+                <th scope="row">Total Rainfall:</th>
+                <td>8.70mm</td>
+                <td>the Bird</td>
+              </tr>
+              <tr>
+                <th scope="row">Wettest:</th>
+                <td>2.30mm</td>
+                <td>the Bird</td>
+              </tr>
+              <tr>
+                <th scope="row">Windiest:</th>
+                <td>10mph</td>
+                <td>the Bird</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>Please also visit <a href="#">Minsk Historical Weather</a>, <a href="#">Text Weather</a> and <a href="#">Weather Charts</a> pages.
+            Historical or past weather forecast page provides historical weather forecast from 1st July, 2008 till now in 3 hourly interval.
+            Text weather page will allow you to get a weather text summary for next 14 days and weather
+            chart page displays weather pattern like temperature, wind speed, gust, pressure, etc. in graphical mode
+            for next 14 days. We hope you like it.</p>
+          <p>If anything is not correct on our website or you have any feedbacks or queries then please do get in touch.
+            We are waiting for your valuable feedbacks.</p>
+
         </div>
 
-        <div class="clearfix visible-sm-block visible-md-block"></div>
 
-        <div class="col-sm-6 col-md-5 col-md-offset-1 col-lg-4 col-lg-offset-0 visible-sm-block visible-md-block visible-lg-block countries-block">
+        <!--<div class="clearfix visible-sm-block visible-md-block"></div>-->
+
+        <div class=" col-lg-4 visible-lg-block countries-block">
           <h5 class="i-globo">INTERACTIVE MAP</h5>
           <div class="map-wrapper">
             <img src="images/pictures/pic3.jpg" alt="pic" width="330" height="320">
-          </div>
-          <h5 class="i-flag visible-lg-block">TOP HOLIDAY COUNTRIES</h5>
-          <div class="top-countr-wrapper visible-lg-block">
-            <ul class="list-unstyled">
-              <li><a href="#">SPAIN</a></li>
-              <li><a href="#">FRANCE</a></li>
-            </ul>
-            <ul class="list-unstyled">
-              <li><a href="#">TURKEY</a></li>
-              <li><a href="#">UNITED KINGDOM</a></li>
-            </ul>
           </div>
           <div class="cont-banner-place">
             <img src="images/pictures/pic4.jpg" alt="pic">
           </div>
         </div>
 
-        <div class="clearfix visible-lg-block"></div>
+        <!--<div class="clearfix visible-lg-block"></div>-->
 
-        <div class="col-sm-6 col-lg-12 news-block">
-          <h1>IN THE NEWS</h1>
-          <div class="forecast-block">
-            <h2>ISTANBUL</h2>
-            <div class="media">
-              <div class="media-left">
-                <span class="media-holder">
-                <img src="images/icons/cloudly.png" alt="pic">
-                </span>
-              </div>
-              <div class="media-body">
-                <p class="media-heading">Cloudy</p>
-                <p class="temperature">19°C  <span>|  12°C</span></p>
-                <p>Real feel 18°C</p>
-              </div>
-                <a class="btn btn-default" href="#" role="button">FULL FORECAST <span class="arrow-right"></span></a>
-            </div>
-          </div>
-          <div class="forecast-block">
-            <h2>ISTANBUL</h2>
-            <div class="media">
-              <div class="media-left">
-                <span class="media-holder">
-                <img src="images/icons/cloudly.png" alt="pic">
-                </span>
-              </div>
-              <div class="media-body">
-                <p class="media-heading">Cloudy</p>
-                <p class="temperature">19°C  <span>|  12°C</span></p>
-                <p>Real feel 18°C</p>
-              </div>
-              <a class="btn btn-default" href="#" role="button">FULL FORECAST <span class="arrow-right"></span></a>
-            </div>
-          </div>
-          <div class="forecast-block">
-            <h2>ISTANBUL</h2>
-            <div class="media">
-              <div class="media-left">
-                <span class="media-holder">
-                <img src="images/icons/cloudly.png" alt="pic">
-                </span>
-              </div>
-              <div class="media-body">
-                <p class="media-heading">Cloudy</p>
-                <p class="temperature">19°C  <span>|  12°C</span></p>
-                <p>Real feel 18°C</p>
-              </div>
-              <a class="btn btn-default" href="#" role="button">FULL FORECAST <span class="arrow-right"></span></a>
-            </div>
-          </div>
-        </div>
     </div>
       <div class="row banner-place">
         <div class="col-md-12 banner-body">
           <img src="images/pictures/pic1.jpg" alt="pic">
         </div>
-      </div>
-      <div class="row blog-article-wrapper">
-        <div class="col-xs-12">
-          <h4>LATEST BLOG POSTS</h4>
-        </div>
-        <article class="col-xs-12 col-sm-6 col-md-4">
-          <a href="#" class="thumbnail">
-            <img src="images/pictures/pic9.jpg" alt="pic">
-            <div class="caption">
-              <h2>Will the 2015 Atlantic hurricane season be the quietest for 30 years?</h2>
-              <p>The darkest depths of the oceans where no sunlight reaches can be pretty chilly for cold-blooded fish. […]</p>
-            </div>
-          </a>
-        </article>
-
-        <article class="col-xs-12 col-sm-6 col-md-4">
-          <a href="#" class="thumbnail">
-            <img src="images/pictures/pic9.jpg" alt="pic">
-            <div class="caption">
-              <h2>Will the 2015 Atlantic hurricane season be the quietest for 30 years?</h2>
-              <p>The darkest depths of the oceans where no sunlight reaches can be pretty chilly for cold-blooded fish. […]</p>
-            </div>
-          </a>
-        </article>
-
-        <article class="col-xs-12 col-sm-6 col-md-4">
-          <a href="#" class="thumbnail">
-            <img src="images/pictures/pic9.jpg" alt="pic">
-            <div class="caption">
-              <h2>Will the 2015 Atlantic hurricane season be the quietest for 30 years?</h2>
-              <p>The darkest depths of the oceans where no sunlight reaches can be pretty chilly for cold-blooded fish. […]</p>
-            </div>
-          </a>
-        </article>
-      </div>
-      <div class="row commercial">
-          <div class="col-sm-6 col-md-6 col-lg-4 col-lg-offset-2">
-            <div class="thumbnail">
-              <img src="images/pictures/pic7.jpg" alt="FREE Weather API" width="331" height="181">
-              <div class="caption">
-                <p><a href="#" class="btn btn-info" role="button">FIND MORE</a> <a href="#" class="btn btn-info" role="button">COMPARE</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-4">
-            <div class="thumbnail">
-              <img src="images/pictures/pic8.jpg" alt="PREMIUM Weather API" width="331" height="181">
-              <div class="caption">
-                <p><a href="#" class="btn btn-info" role="button">PRICING</a> <a href="#" class="btn btn-info" role="button">TRY NOW</a></p>
-              </div>
-            </div>
-          </div>
       </div>
 
     </div>
