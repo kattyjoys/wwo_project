@@ -252,7 +252,7 @@
     }
   }
   .next-day-forecast{
-    margin-bottom: 23px;
+    margin-bottom: 18px;
   }
 }
 
@@ -335,8 +335,15 @@
     background-size: cover;
     margin-right: -2px;
     vertical-align: top;
+    &:hover{
+      background-color: $color-light-green4;
+    }
     &.active{
       position: relative;
+      &:hover{
+        background-color: transparent;
+        cursor: default;
+      }
       &:before{
         content: "";
         position: absolute;
@@ -507,6 +514,106 @@
   a{
     color: $color-green1;
   }
+}
+
+/*OUTLOOK*/
+.uv-variables{
+  h4,
+  .var-group{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .table{
+    text-align: center;
+    th{
+      text-align: center;
+      font-weight: normal;
+      background-color: $color-light-gray3;
+      border: 2px solid $color-white;
+    }
+    td{
+      border: 2px solid $color-white;
+    }
+  }
+}
+
+.var-group{
+  padding-top: 10px;
+  padding-left: 0;
+  list-style-type: none;
+  font-size: $font-size-xsmall;
+  li{
+    display: inline-block;
+    text-align: center;
+    span{
+      display: block;
+      width: 16px;
+      height: 16px;
+    }
+    &:last-child{
+      color: $color-light-gray4;
+      font-size: 21px;
+      line-height: 15px;
+      font-family: $font-gothamprobold;
+      span{
+        font-size: 9px;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.daily-block{
+  h2{
+    color: $color-black;
+    font-size: 30px;
+  }
+  .table{
+    tbody{
+      text-align: center;
+      font-size: $font-size-xsmall;
+      th{
+        font-weight: normal;
+        color: $color-green5;
+      }
+      th,
+      td{
+        border: none;
+        padding-top: 16px;
+        padding-bottom: 18px;
+      }
+    }
+  }
+  .links-wrapper{
+    a{
+      color: $color-green5;
+      font-weight: bold;
+      position: relative;
+      text-decoration: underline;
+      padding: 0 14px 0 5px;
+      white-space: nowrap;
+      &:after{
+        content: "|";
+        position: absolute;
+        display: block;
+        right: 0;
+        bottom: 0;
+      }
+      &:hover{
+        text-decoration: none;
+      }
+      &:last-child{
+        &:after{
+          content: "";
+        }
+      }
+    }
+  }
+
 }
 
 
