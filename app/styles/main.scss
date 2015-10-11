@@ -518,12 +518,17 @@
 
 /*OUTLOOK*/
 .uv-variables{
+  margin-bottom: 13px;
   h4,
   .var-group{
-    margin: 0;
+    margin: 0 15px 10px 0;
     padding: 0;
     display: inline-block;
     vertical-align: top;
+
+  }
+  h4{
+    margin-bottom: 14px;
   }
   .table{
     text-align: center;
@@ -547,6 +552,7 @@
   li{
     display: inline-block;
     text-align: center;
+    margin-right: 1px;
     span{
       display: block;
       width: 16px;
@@ -557,6 +563,7 @@
       font-size: 21px;
       line-height: 15px;
       font-family: $font-gothamprobold;
+      margin-left: 6px;
       span{
         font-size: 9px;
         width: auto;
@@ -568,11 +575,22 @@
 }
 
 .daily-block{
+  margin-left: -15px;
+  margin-right: -15px;
   h2{
+    padding-left: 15px;
     color: $color-black;
     font-size: 30px;
   }
   .table{
+    thead{
+      td{
+        text-align: center;
+        p{
+          margin-bottom: 0;
+        }
+      }
+    }
     tbody{
       text-align: center;
       font-size: $font-size-xsmall;
@@ -613,8 +631,101 @@
       }
     }
   }
-
 }
+
+.loc-outlook-heading{
+  border-bottom: 3px solid $color-light-green;
+  margin-bottom: 25px;
+  h4{
+    display: inline-block;
+    line-height: 24px;
+    padding-bottom: 4px;
+    margin-bottom: 0;
+
+  }
+  .btn-group{
+    display: inline-block;
+    vertical-align: top;
+    .location{
+      background: url($icons_image_dir + "satellite.png") no-repeat left 0;
+      padding-left: 20px;
+      margin-left: 10px;
+      font-size: 16px;
+      font-family: $font-gothamprobold;
+      text-transform: uppercase;
+      float: left;
+    }
+  }
+  .btn{
+    font-size: 0;
+    background-color: transparent;
+    border: 1px solid $color-light-gray1;
+    margin-left: 10px;
+    margin-top: 4px;
+    padding: 5px 4px 4px;
+  }
+  .dropdown-menu{
+    border-radius: 0;
+  }
+}
+.loc-outlook{
+  .forecast-block{
+    padding-left: 0;
+    .media{
+      padding-left: 0;
+      margin-bottom: 22px;
+    }
+    .media-heading{
+      font-size: $font-size-normal;
+      margin-bottom: 0;
+    }
+    .sunrise,
+    .sunset{
+      padding-left: 30px;
+      background: url($icons_image_dir + "sunrise.png") no-repeat left 1px;
+      color: $color-black;
+      margin-bottom: 0;
+      margin-left: 5px;
+    }
+    .sunset{
+      background-position: left -38px;
+    }
+    .dl-horizontal{
+      margin-bottom: 15px;
+      dt {
+        float: left;
+        width: 90px;
+        overflow: hidden;
+        clear: left;
+        text-align: left;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-weight: normal;
+        line-height: 24px;
+      }
+      dd{
+        line-height: 24px;
+      }
+      &.dl-gray{
+        padding-top: 10px;
+        color: $color-copy-gray4;
+        position: relative;
+        margin-bottom: 27px;
+        &:before{
+          position: absolute;
+          content: '';
+          display: block;
+          top: 0;
+          left: 0;
+          width: 140px;
+          height: 2px;
+          background-color: $color-light-green2;
+        }
+      }
+    }
+  }
+}
+
 
 
 
