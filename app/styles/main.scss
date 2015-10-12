@@ -632,6 +632,21 @@
     }
   }
 }
+.daily-block-thead{
+  ul{
+    vertical-align: top;
+    display: inline-block;
+    padding-left: 15px;
+    &:first-child{
+      margin-right: 45px;
+    }
+    li{
+      font-size: 12px;
+      list-style-type: none;
+      padding-bottom: 6px;
+    }
+  }
+}
 
 .loc-outlook-heading{
   border-bottom: 3px solid $color-light-green;
@@ -689,6 +704,7 @@
     }
     .sunset{
       background-position: left -38px;
+      margin-bottom: 24px;
     }
     .dl-horizontal{
       margin-bottom: 15px;
@@ -1115,6 +1131,25 @@
     padding-right: 30px;
     h2{
       margin-top: 0;
+    }
+  }
+
+  /*OUTLOOK*/
+  .daily-block-thead{
+    display: table;
+    width: 100%;
+    ul{
+      padding-left: 0;
+      &:first-child{
+        margin-right: 0;
+      }
+      li{
+        text-align: center;
+        display: inline-block;
+        background-color: $color-light-gray3;
+        padding: 15px 5px 12px 5px;
+        width: 120px;
+      }
     }
   }
 
