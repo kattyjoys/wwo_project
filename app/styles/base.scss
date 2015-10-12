@@ -170,3 +170,16 @@ a:focus{
 .var-11{
   background-color: $color-accent11;
 }
+
+.dl-horizontal dt {
+  float: left;
+  width: 160px;
+  overflow: hidden;
+  clear: left;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.dl-horizontal dd {
+  margin-left: 180px;
+}
