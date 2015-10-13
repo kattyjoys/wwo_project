@@ -598,6 +598,7 @@
       th{
         font-weight: normal;
         color: $color-green5;
+        padding-right: 0;
       }
       th,
       td{
@@ -614,7 +615,7 @@
       font-weight: bold;
       position: relative;
       text-decoration: underline;
-      padding: 0 14px 0 5px;
+      padding: 0 14px 6px 5px;
       white-space: nowrap;
       &:after{
         content: "|";
@@ -720,6 +721,7 @@
         white-space: nowrap;
         font-weight: normal;
         line-height: 24px;
+
       }
       dd{
         line-height: 24px;
@@ -744,15 +746,51 @@
   }
 }
 
-
+.collapse-block{
+  .links-wrapper{
+    margin-top: 20px;
+  }
+}
 .r-wrapper{
+  border-bottom: 2px solid $color-white;
   padding-left: 20px;
+  .collapse{
+    display: block;
+    float: left;
+    height: 124px!important;
+    overflow: hidden;
+  }
+  .collapse.in{
+    width: 240px;
+    height: auto!important;
+  }
+  .collapse-btn{
+    font-size: 0;
+    padding: 90px 0 119px;
+    width: 53px;
+    color: $color-white;
+    background-color: $color-light-gray2;
+    display: inline-block;
+    float: right;
+    .fa{
+      font-size: 35px;
+    }
+    &.collapsed{
+      padding: 48px 8px 36px;
+      font-size: $font-size-small;
+      .fa{
+        transform: rotate(180deg);
+        font-size: 35px;
+      }
+    }
+  }
   .day, .dl-horizontal{
     display: inline-block;
     vertical-align: top;
   }
   .day{
-    margin-right: 40px;
+    padding-top: 6px;
+    margin-right: 20px;
     p{
       margin-bottom: 12px;
     }
@@ -765,16 +803,19 @@
     }
   }
   .dl-horizontal{
+    padding-top: 9px;
     dt{
       text-align: left;
       color: $color-green1;
       font-size: $font-size-small;
       font-weight: normal;
       width: 80px;
+      padding-bottom: 7px;
     }
     dd {
       margin-left: 90px;
       font-size: $font-size-small;
+      text-align: center;
     }
   }
 }
@@ -1227,6 +1268,12 @@
         }
       }
     }
+    .collapse-btn{
+      display: none;
+    }
+    .collapse{
+      height: auto!important;
+    }
   }
 
   /*FOOTER*/
@@ -1338,16 +1385,20 @@
   }
   .download-app{
     color: $color-copy-gray2;
-    a{
-      color: $color-green3;
-      font-size: $font-size-xlarge;
+    li{
+      display: inline-block;
       margin-right: 5px;
       margin-left: 5px;
       &:first-child{
+        display: block;
         margin-left: 0;
       }
-      &:last-child{
-        margin-right: 0;
+      > a{
+        padding: 0;
+        color: $color-green3;
+        font-size: $font-size-xlarge;
+
+
       }
     }
   }
@@ -1457,8 +1508,11 @@
     }
     .download-app{
       padding-top: 0;
-      li{
+      li:first-child{
         display: none;
+      }
+      li>a{
+        color: $color-green3;
       }
     }
     .colC, .colD, .colE{
