@@ -577,6 +577,7 @@
 .daily-block{
   margin-left: -15px;
   margin-right: -15px;
+  margin-bottom: 6px;
   h2{
     padding-left: 15px;
     color: $color-black;
@@ -773,6 +774,7 @@
     }
     dd {
       margin-left: 90px;
+      font-size: $font-size-small;
     }
   }
 }
@@ -1171,6 +1173,9 @@
   }
 
   /*OUTLOOK*/
+  .daily-block{
+    margin-bottom: 38px;
+  }
   .daily-block-thead{
     display: table;
     width: 100%;
@@ -1191,18 +1196,34 @@
 
   .r-wrapper{
     display: inline-block;
+    vertical-align: top;
+    padding-left: 0;
     .day, .dl-horizontal{
       display: block;
     }
     .dl-horizontal{
       dt{
         display: none;
+        padding: 20px 8px;
+      }
+      dd{
+        margin-left: 0;
+        padding: 20px 8px;
       }
     }
     &.first-day{
+      .day{
+        margin-right: 0;
+        padding-left: 80px;
+      }
       .dl-horizontal{
-          dt{
+        dt{
           display: block;
+        }
+        dd{
+          padding: 0 8px;
+          margin-left: 80px;
+          line-height: 57px;
         }
       }
     }
