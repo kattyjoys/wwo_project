@@ -45,6 +45,12 @@ a:focus{
   outline: none;
 }
 
+.copy,
+.inner-cont .copy{
+  font-size: $font-size-slarge;
+  line-height: 24px;
+}
+
 .main-container{
   max-width: 1200px;
   background-color: $color-white;
