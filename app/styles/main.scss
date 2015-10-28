@@ -622,7 +622,7 @@
         position: absolute;
         display: block;
         right: 0;
-        bottom: 0;
+        bottom: 6px;
       }
       &:hover{
         text-decoration: none;
@@ -824,6 +824,12 @@
 .character-block{
   margin-bottom: 34px;
 }
+.inner-heading{
+  font-size: 30px;
+  padding: 10px 0;
+  color: $color-green4;
+}
+
 .inner-cont .char{
   line-height: 12px;
   font-family: $font-gothamprobold;
@@ -935,6 +941,71 @@
     }
   }
 }
+
+/*1 to 15 page*/
+.jet-up,
+.jet-down{
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background: url($icons_image_dir + "paper_jet.png") no-repeat 0 0;
+  vertical-align: middle;
+  margin-left: 3px;
+}
+.jet-down{
+  background-position: 0 -40px;
+}
+
+.daily-block.to_15{
+  .table{
+    thead{
+      tr:first-child{
+        td, th{
+          background-color: $color-light-gray3;
+        }
+      }
+      td, th{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border-top: 1px solid $color-white;
+        border-bottom: 2px solid $color-white;
+      }
+      th{
+
+        font-weight: normal;
+        text-align: left;
+      }
+
+    }
+
+    th,td{
+      border-bottom: 2px solid $color-white;
+      font-size: 12px;
+      padding-bottom: 16px;
+    }
+  }
+}
+
+
+.to_15{
+  .forecast-block{
+    .temperature{
+      margin-bottom: 6px;
+    }
+    .media{
+      margin-bottom: 0;
+    }
+    .inner-block{
+      p{
+        display: inline-block;
+        color: $color-black;
+        font-size: $font-size-normal;
+        margin-right: 20px ;
+      }
+    }
+  }
+}
+
 
 
 
@@ -1403,7 +1474,7 @@
 
   /*MAP PAGE*/
   .map-frame{
-    margin: 0 0 15px 0;
+    margin: 0 0 15px 0f;
     border: 5px solid $color-green4;
   }
 

@@ -138,101 +138,396 @@
         <button type="button" class="btn8">MON</button>
         <button type="button" class="btn9">1 to 15 DAYS</button>
       </div>
-      <div class="bs-example bs-example-tabs summary-tabs" data-example-id="togglable-tabs">
-        <ul id="myTabs" class="nav nav-tabs" role="tablist">
-          <li role="presentation" class="">
-            <a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="false">Weekly Summary</a>
-          </li>
-          <li role="presentation" class="active">
-            <a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="true">Fri</a>
-          </li>
-        </ul>
-        <div id="myTabContent" class="tab-content">
-          <div role="tabpanel" class="tab-pane fade" id="home" aria-labelledby="home-tab">
-            <h4>Minsk weather summary for coming week</h4>
-            <p>The maximum temperature for Minsk over the next 7 day will be 36C(or 97C) on Tuesday 11th August at around 2 pm.
-              In the same week the minimum temperature will be 18C (or 64C) on Friday 7th August at around 5 am.
-              Our Minsk weather forecaster is reporting Monday 10th August to be the wettest day in the coming week
-              with around 2.30mm (or 0.1 inches) of rainfall. Make sure to carry an umbrella if you are out and about in Minsk.
-              The windiest of all days will be Thursday 13th August as wind will reach 10mph (or 15kmph) at around 5 pm.</p>
+
+
+      <!-- here is mobile table-->
+
+
+      <div class="loc-outlook to_15">
+        <div class="loc-outlook-heading">
+          <h4>MON 10TH AUG, 2015</h4>
+        </div>
+        <div class="forecast-block">
+          <div class="media">
+            <div class="media-left">
+                <span class="media-holder">
+                <img src="images/icons/cloudly_1.png" alt="pic" width="54" height="57">
+                </span>
+            </div>
+            <div class="media-body">
+              <p class="media-heading">Cloudy</p>
+              <p class="temperature">max: 19°C  <span>|  min: 12°C</span></p>
+              <div class="inner-block">
+                <p>RAIN: 0.00 mm</p>
+                <p class="sunrise">Sunrise: 05:32 AM</p>
+                <p class="sunset">Sunset: 08:59 PM</p>
+              </div>
+            </div>
           </div>
-          <div role="tabpanel" class="tab-pane fade active in" id="profile" aria-labelledby="profile-tab">
-            <h4>Minsk weather summary for coming week</h4>
-            <p>The maximum temperature for Minsk over the next 7 day will be 36C(or 97C) on Tuesday 11th August at around 2 pm.
-              In the same week the minimum temperature will be 18C (or 64C) on Friday 7th August at around 5 am.
-              Our Minsk weather forecaster is reporting Monday 10th August to be the wettest day in the coming week
-              with around 2.30mm (or 0.1 inches) of rainfall. Make sure to carry an umbrella if you are out and about in Minsk.
-              The windiest of all days will be Thursday 13th August as wind will reach 10mph (or 15kmph) at around 5 pm.</p>
-          </div>
+
         </div>
       </div>
 
-      <div class="summary-block">
-        <div class="media summary-heading">
-          <div class="media-left">
-            <img src="images/icons/cloudly.png">
-          </div>
-          <div class="media-body">
-            <h4 class="media-heading">Minsk
-              <span>holiday weather summary at a glance</span>
-            </h4>
-          </div>
-        </div>
-        <table class="table">
+      <div class="daily-block to_15">
+        <table class="table table-striped">
           <thead>
           <tr>
-            <th>Weather Element</th>
-            <th>How Much?</th>
-            <th>When?</th>
+            <th>Time</th>
+            <td>02:00</td>
+            <td>05:00</td>
+            <td>08:00</td>
+            <td>11:00</td>
+            <td>14:00</td>
+            <td>17:00</td>
+            <td>20:00</td>
+            <td>23:00</td>
+          </tr>
+          <tr>
+            <th>Weather</th>
+            <td>
+              <img src="images/icons/cloudly_1.png" width="25" height="27">
+            </td>
+            <td>
+              <img src="images/icons/cloudly_1.png" width="25" height="27">
+            </td>
+            <td>
+              <img src="images/icons/cloudly_1.png" width="25" height="27">
+            </td>
+            <td>
+              <img src="images/icons/cloudly_1.png" width="25" height="27">
+            </td>
+            <td>
+              <img src="images/icons/cloudly_1.png" width="25" height="27">
+            </td>
+            <td>
+              <img src="images/icons/cloudly_1.png" width="25" height="27">
+            </td>
+            <td>
+              <img src="images/icons/cloudly_1.png" width="25" height="27">
+            </td>
+            <td>
+              <img src="images/icons/cloudly_1.png" width="25" height="27">
+            </td>
           </tr>
           </thead>
           <tbody>
           <tr>
-            <th scope="row">Max Temp:</th>
-            <td>36C</td>
-            <td>Otto</td>
+            <th scope="row">Temp</th>
+            <td class="var-12">28 °c</td>
+            <td class="var-14">28 °c</td>
+            <td class="var-7">28 °c</td>
+            <td class="var-6">28 °c</td>
+            <td class="var-5">28 °c</td>
+            <td class="var-14">28 °c</td>
+            <td class="var-12">28 °c</td>
+            <td class="var-13">28 °c</td>
           </tr>
           <tr>
-            <th scope="row">Min Tem:</th>
-            <td>18C</td>
-            <td>Thornton</td>
+            <th scope="row">Feels</th>
+            <td class="var-12">28 °c</td>
+            <td class="var-14">28 °c</td>
+            <td class="var-7">28 °c</td>
+            <td class="var-6">28 °c</td>
+            <td class="var-5">28 °c</td>
+            <td class="var-14">28 °c</td>
+            <td class="var-12">28 °c</td>
+            <td class="var-13">28 °c</td>
           </tr>
           <tr>
-            <th scope="row">Av. Max Temp:</th>
-            <td>35C</td>
-            <td>the Bird</td>
+            <th scope="row">Rain</th>
+            <td>0.0 mm</td>
+            <td>0.0 mm</td>
+            <td>0.0 mm</td>
+            <td>0.0 mm</td>
+            <td>0.0 mm</td>
+            <td>0.0 mm</td>
+            <td>0.0 mm</td>
+            <td>0.0 mm</td>
           </tr>
           <tr>
-            <th scope="row">Av/ Min Temp:</th>
-            <td>19C</td>
-            <td>the Bird</td>
+            <th scope="row">Chance?</th>
+            <td>2 mph SSE</td>
+            <td>2 mph SSE</td>
+            <td>2 mph SSE</td>
+            <td>2 mph SSE</td>
+            <td>2 mph SSE</td>
+            <td>2 mph SSE</td>
+            <td>2 mph SSE</td>
+            <td>2 mph SSE</td>
           </tr>
           <tr>
-            <th scope="row">Total Rainfall:</th>
-            <td>8.70mm</td>
-            <td>the Bird</td>
+            <th scope="row">Cloud</th>
+            <td>2 mph</td>
+            <td>2 mph</td>
+            <td>2 mph</td>
+            <td>2 mph</td>
+            <td>2 mph</td>
+            <td>2 mph</td>
+            <td>2 mph</td>
+            <td>2 mph</td>
           </tr>
           <tr>
-            <th scope="row">Wettest:</th>
-            <td>2.30mm</td>
-            <td>the Bird</td>
+            <th scope="row">Wind</th>
+            <td>50%</td>
+            <td>50%</td>
+            <td>50%</td>
+            <td>50%</td>
+            <td>50%</td>
+            <td>50%</td>
+            <td>50%</td>
+            <td>50%</td>
           </tr>
           <tr>
-            <th scope="row">Windiest:</th>
-            <td>10mph</td>
-            <td>the Bird</td>
+            <th scope="row">Wind Dir</th>
+            <td>NNE <span class="jet-up"></span></td>
+            <td>NNE <span class="jet-down"></span></td>
+            <td>NNE <span class="jet-up"></span></td>
+            <td>NNE<span class="jet-down"></span></td>
+            <td>NNE <span class="jet-up"></span></td>
+            <td>NNE<span class="jet-down"></span></td>
+            <td>NNE <span class="jet-up"></span></td>
+            <td>NNE<span class="jet-down"></span></td>
+          </tr>
+          <tr>
+            <th scope="row">Gust</th>
+            <td>8 mph</td>
+            <td>8 mph</td>
+            <td>8 mph</td>
+            <td>8 mph</td>
+            <td>8 mph</td>
+            <td>8 mph</td>
+            <td>8 mph</td>
+            <td>8 mph</td>
+          </tr>
+          <tr>
+            <th scope="row">Humidity</th>
+            <td>50%</td>
+            <td>50%</td>
+            <td>50%</td>
+            <td>50%</td>
+            <td>50%</td>
+            <td>50%</td>
+            <td>50%</td>
+            <td>50%</td>
+          </tr>
+          <tr>
+            <th scope="row">Pressure</th>
+            <td>1022 mb</td>
+            <td>1022 mb</td>
+            <td>1022 mb</td>
+            <td>1022 mb</td>
+            <td>1022 mb</td>
+            <td>1022 mb</td>
+            <td>1022 mb</td>
+            <td>1022 mb</td>
           </tr>
           </tbody>
         </table>
+        <div class="links-wrapper">
+          <a href="#">Hour by hour</a>
+          <a href="#">3 hourly interval</a>
+          <a href="#">Historical weather</a>
+          <a href="#">Text weather</a>
+          <a href="#">Weather charts</a>
+        </div>
       </div>
 
-      <p>Please also visit <a href="#">Minsk Historical Weather</a>, <a href="#">Text Weather</a> and <a href="#">Weather Charts</a> pages.
-        Historical or past weather forecast page provides historical weather forecast from 1st July, 2008 till now in 3 hourly interval.
-        Text weather page will allow you to get a weather text summary for next 14 days and weather
-        chart page displays weather pattern like temperature, wind speed, gust, pressure, etc. in graphical mode
-        for next 14 days. We hope you like it.</p>
-      <p>If anything is not correct on our website or you have any feedbacks or queries then please do get in touch.
-        We are waiting for your valuable feedbacks.</p>
+      <div class="loc-outlook to_15">
+        <div class="loc-outlook-heading">
+          <h4>MON 10TH AUG, 2015</h4>
+        </div>
+        <div class="forecast-block">
+          <div class="media">
+            <div class="media-left">
+                <span class="media-holder">
+                <img src="images/icons/cloudly_1.png" alt="pic" width="54" height="57">
+                </span>
+            </div>
+            <div class="media-body">
+              <p class="media-heading">Cloudy</p>
+              <p class="temperature">max: 19°C  <span>|  min: 12°C</span></p>
+              <div class="inner-block">
+                <p>RAIN: 0.00 mm</p>
+                <p class="sunrise">Sunrise: 05:32 AM</p>
+                <p class="sunset">Sunset: 08:59 PM</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="daily-block to_15">
+        <table class="table table-striped">
+          <thead>
+          <tr>
+            <th>Time</th>
+            <td>02:00</td>
+            <td>05:00</td>
+            <td>08:00</td>
+            <td>11:00</td>
+            <td>14:00</td>
+            <td>17:00</td>
+            <td>20:00</td>
+            <td>23:00</td>
+          </tr>
+          <tr>
+            <th>Weather</th>
+            <td>
+              <img src="images/icons/cloudly_1.png" width="25" height="27">
+            </td>
+            <td>
+              <img src="images/icons/cloudly_1.png" width="25" height="27">
+            </td>
+            <td>
+              <img src="images/icons/cloudly_1.png" width="25" height="27">
+            </td>
+            <td>
+              <img src="images/icons/cloudly_1.png" width="25" height="27">
+            </td>
+            <td>
+              <img src="images/icons/cloudly_1.png" width="25" height="27">
+            </td>
+            <td>
+              <img src="images/icons/cloudly_1.png" width="25" height="27">
+            </td>
+            <td>
+              <img src="images/icons/cloudly_1.png" width="25" height="27">
+            </td>
+            <td>
+              <img src="images/icons/cloudly_1.png" width="25" height="27">
+            </td>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th scope="row">Temp</th>
+            <td class="var-12">28 °c</td>
+            <td class="var-14">28 °c</td>
+            <td class="var-7">28 °c</td>
+            <td class="var-6">28 °c</td>
+            <td class="var-5">28 °c</td>
+            <td class="var-14">28 °c</td>
+            <td class="var-12">28 °c</td>
+            <td class="var-13">28 °c</td>
+          </tr>
+          <tr>
+            <th scope="row">Feels</th>
+            <td class="var-12">28 °c</td>
+            <td class="var-14">28 °c</td>
+            <td class="var-7">28 °c</td>
+            <td class="var-6">28 °c</td>
+            <td class="var-5">28 °c</td>
+            <td class="var-14">28 °c</td>
+            <td class="var-12">28 °c</td>
+            <td class="var-13">28 °c</td>
+          </tr>
+          <tr>
+            <th scope="row">Rain</th>
+            <td>0.0 mm</td>
+            <td>0.0 mm</td>
+            <td>0.0 mm</td>
+            <td>0.0 mm</td>
+            <td>0.0 mm</td>
+            <td>0.0 mm</td>
+            <td>0.0 mm</td>
+            <td>0.0 mm</td>
+          </tr>
+          <tr>
+            <th scope="row">Chance?</th>
+            <td>2 mph SSE</td>
+            <td>2 mph SSE</td>
+            <td>2 mph SSE</td>
+            <td>2 mph SSE</td>
+            <td>2 mph SSE</td>
+            <td>2 mph SSE</td>
+            <td>2 mph SSE</td>
+            <td>2 mph SSE</td>
+          </tr>
+          <tr>
+            <th scope="row">Cloud</th>
+            <td>2 mph</td>
+            <td>2 mph</td>
+            <td>2 mph</td>
+            <td>2 mph</td>
+            <td>2 mph</td>
+            <td>2 mph</td>
+            <td>2 mph</td>
+            <td>2 mph</td>
+          </tr>
+          <tr>
+            <th scope="row">Wind</th>
+            <td>50%</td>
+            <td>50%</td>
+            <td>50%</td>
+            <td>50%</td>
+            <td>50%</td>
+            <td>50%</td>
+            <td>50%</td>
+            <td>50%</td>
+          </tr>
+          <tr>
+            <th scope="row">Wind Dir</th>
+            <td>NNE <span class="jet-up"></span></td>
+            <td>NNE <span class="jet-down"></span></td>
+            <td>NNE <span class="jet-up"></span></td>
+            <td>NNE<span class="jet-down"></span></td>
+            <td>NNE <span class="jet-up"></span></td>
+            <td>NNE<span class="jet-down"></span></td>
+            <td>NNE <span class="jet-up"></span></td>
+            <td>NNE<span class="jet-down"></span></td>
+          </tr>
+          <tr>
+            <th scope="row">Gust</th>
+            <td>8 mph</td>
+            <td>8 mph</td>
+            <td>8 mph</td>
+            <td>8 mph</td>
+            <td>8 mph</td>
+            <td>8 mph</td>
+            <td>8 mph</td>
+            <td>8 mph</td>
+          </tr>
+          <tr>
+            <th scope="row">Humidity</th>
+            <td>50%</td>
+            <td>50%</td>
+            <td>50%</td>
+            <td>50%</td>
+            <td>50%</td>
+            <td>50%</td>
+            <td>50%</td>
+            <td>50%</td>
+          </tr>
+          <tr>
+            <th scope="row">Pressure</th>
+            <td>1022 mb</td>
+            <td>1022 mb</td>
+            <td>1022 mb</td>
+            <td>1022 mb</td>
+            <td>1022 mb</td>
+            <td>1022 mb</td>
+            <td>1022 mb</td>
+            <td>1022 mb</td>
+          </tr>
+          </tbody>
+        </table>
+        <div class="links-wrapper">
+          <a href="#">Hour by hour</a>
+          <a href="#">3 hourly interval</a>
+          <a href="#">Historical weather</a>
+          <a href="#">Text weather</a>
+          <a href="#">Weather charts</a>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
 
     </div>
 
