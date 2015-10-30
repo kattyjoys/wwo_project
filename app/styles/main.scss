@@ -1006,6 +1006,89 @@
   }
 }
 
+.table.mobile-to_15{
+  margin-bottom: 0;
+  border-bottom: 2px solid $color-white;
+  float: left;
+  width: calc(100% - 53px);
+  .day{
+    border-bottom: 0;
+    p{
+      font-weight: normal;
+    }
+  }
+  .temperature{
+    margin-bottom: 12px;
+    span{
+      display: block;
+    }
+  }
+  tbody{
+    tr{
+      &:nth-child(odd){
+        th,td{
+          border-bottom: 1px solid $color-white;
+        }
+      }
+    }
+    th{
+      font-weight: normal;
+    }
+    td{
+      text-align: center;
+    }
+     .par{
+       text-align: left;
+      color: $color-green5;
+    }
+    &.collapse{
+      display: none;
+    }
+    &.collapse.in {
+      //width: calc(100% - 70px);
+      display: table-row-group;
+      float: none;
+      height: auto;
+    }
+  }
+
+  .sunrise,
+  .sunset{
+    padding-left: 30px;
+    background: url($icons_image_dir + "sunrise.png") no-repeat left 1px;
+    color: $color-black;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+  .sunset{
+    background-position: left -38px;
+    margin-bottom: 24px;
+  }
+}
+
+.mobile-to_15{
+  .r-wrapper{
+    margin: 0 -15px;
+    padding-left: 0;
+    position: relative;
+    .day{
+      margin-right: 0;
+      margin-left: 20px;
+    }
+  }
+  .r-wrapper .collapse-btn{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+  .r-wrapper .collapse-btn.collapsed{
+    height: auto!important;
+  }
+}
+.daily-block.visible-xs-block{
+  padding: 20px 0 0 20px;
+}
+
 
 
 
