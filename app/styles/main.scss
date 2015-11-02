@@ -1090,6 +1090,38 @@
   padding: 20px 0 0 20px;
 }
 
+.daily-block.to_15_1{
+  .table{
+    tbody, thead{
+      th{
+        vertical-align: middle;
+        color: $color-black;
+      }
+    }
+    tbody{
+      th, td{
+        padding-top: 10px;
+        padding-bottom: 11px;
+      }
+    }
+  }
+}
+
+.to_15_1 .table thead tr:first-child td,
+.to_15_1 .table thead tr:first-child th{
+  font-weight: bold;
+}
+
+
+.media-bottom{
+  padding-top: 14px;
+  ul{
+    margin-top: -45px;
+    font-size: $font-size-small;
+  }
+}
+
+
 
 
 
