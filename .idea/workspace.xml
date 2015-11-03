@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42340e89-5d71-48cd-875a-72564d2b10b9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/country-list.html" afterPath="$PROJECT_DIR$/app/country-list.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/forms.scss" afterPath="$PROJECT_DIR$/app/styles/forms.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.scss" afterPath="$PROJECT_DIR$/app/styles/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/map.html" afterPath="$PROJECT_DIR$/app/map.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/outlook.html" afterPath="$PROJECT_DIR$/app/outlook.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/summary.html" afterPath="$PROJECT_DIR$/app/summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/text.html" afterPath="$PROJECT_DIR$/app/text.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/to15.html" afterPath="$PROJECT_DIR$/app/to15.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/to15_1hour.html" afterPath="$PROJECT_DIR$/app/to15_1hour.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wwo_project.iws" />
@@ -49,8 +40,8 @@
       <file leaf-file-name="forms.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/styles/forms.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7702703">
-              <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.6841216">
+              <caret line="61" column="23" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -122,13 +113,13 @@
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/styles/main.scss" />
         <option value="$PROJECT_DIR$/app/to15_1hour.html" />
-        <option value="$PROJECT_DIR$/app/styles/forms.scss" />
         <option value="$PROJECT_DIR$/app/to15.html" />
         <option value="$PROJECT_DIR$/app/text.html" />
         <option value="$PROJECT_DIR$/app/summary.html" />
         <option value="$PROJECT_DIR$/app/outlook.html" />
         <option value="$PROJECT_DIR$/app/map.html" />
         <option value="$PROJECT_DIR$/app/country-list.html" />
+        <option value="$PROJECT_DIR$/app/styles/forms.scss" />
       </list>
     </option>
   </component>
@@ -842,8 +833,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/forms.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7702703">
-          <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.6841216">
+          <caret line="61" column="23" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
           <folding />
         </state>
       </provider>
