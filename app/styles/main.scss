@@ -1253,11 +1253,11 @@
     }
   }
 
-  .search{
+  .index .search{
     margin-bottom: 40px;
     width: 340px;
   }
-  .search-cover{
+  .index .search-cover{
     background: $color-light-green2;
     padding: 27px 30px 50px 28px;
     label{
@@ -1269,7 +1269,7 @@
       padding-bottom: 9px;
     }
   }
-  .search .search-btn{
+  .index .search .search-btn{
     display: block;
     float: right;
     color: $color-white;

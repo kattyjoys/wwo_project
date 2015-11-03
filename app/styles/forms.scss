@@ -25,8 +25,9 @@
 }
 
 
+
 @media (min-width: $screen-sm-min) {
-  .search{
+  .index .search{
     .form-control{
       border: none;
       width: 282px;
@@ -46,4 +47,23 @@
       color: transparent;
     }
   }
+
+  .search.visible-sm-block{
+    .form-control{
+      margin-top: 13px;
+    }
+  }
 }
+
+@media (min-width: $screen-lg){
+  .search.visible-sm-block{
+    .form-control{
+      margin-top: 0;
+    }
+    .search-cover{
+      width: auto;
+    }
+  }
+
+}
+
